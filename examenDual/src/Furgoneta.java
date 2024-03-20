@@ -5,7 +5,7 @@ public class Furgoneta extends Vehiculo{
     float cargaMaxima;
     int plazaAsientos;
 
-    public Furgon(String matricula, String modelo, String marca, float kmRecorridos, float precioDia, String tipoMotor, float cargaMaxima, int plazaAsientos) {
+    public Furgoneta(String matricula, String modelo, String marca, float kmRecorridos, float precioDia, String tipoMotor, float cargaMaxima, int plazaAsientos) {
         super(matricula, modelo, marca, kmRecorridos, precioDia, tipoMotor);
         this.cargaMaxima = cargaMaxima;
         this.plazaAsientos = plazaAsientos;

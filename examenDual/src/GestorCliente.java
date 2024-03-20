@@ -1,5 +1,5 @@
 package com.politecnico.coches;
 
-public class Vehiculo {
+public interface GestorCliente {
 
 }

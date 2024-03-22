@@ -225,6 +225,7 @@ public class Main {
 				else {
 					System.out.println("No se pudo eliminar el vehículo");
 				}
+				break;
 			case 3:
 				System.out.println("Introduzca su dni: ");
 				atrDni = sc.nextLine();
@@ -403,6 +404,7 @@ public class Main {
 				}else {
 					System.out.println("No se pudo eliminar el cliente");
 				}
+				break;
 			case 8:
 				System.out.println("Adios");
 				loop = false;

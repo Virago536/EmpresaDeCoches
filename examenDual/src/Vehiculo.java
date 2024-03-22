@@ -1,66 +1,83 @@
 package com.politecnico.coches;
 
- String matricula;
-    String modelo;
-    String marca;
-    float kmRecorridos;
-    float precioDia;
-    String tipoMotor;
+public class Vehiculo {
+	String matricula, modelo, marca, motor, conductor;
+	int kms_recorridos, dias_alquilado; 
+	float precio_dia;
+	
+	public Vehiculo(String matricula, String modelo, String marca, String motor, int kms_recorridos, float precio_dia, String conductor, int dias_alquilado) {
+		this.matricula = matricula;
+		this.modelo = modelo;
+		this.marca = marca;
+		this.motor = motor;
+		this.kms_recorridos = kms_recorridos;
+		this.precio_dia = precio_dia;
+		this.conductor = conductor;
+		this.dias_alquilado = dias_alquilado;
+	}
 
-    public Vehiculo(String matricula, String modelo, String marca, float kmRecorridos, float precioDia, String tipoMotor) {
-        this.matricula = matricula;
-        this.modelo = modelo;
-        this.marca = marca;
-        this.kmRecorridos = kmRecorridos;
-        this.precioDia = precioDia;
-        this.tipoMotor = tipoMotor;
-    }
+	public String getMatricula() {
+		return matricula;
+	}
 
-    public String getMatricula() {
-        return matricula;
-    }
+	public void setMatricula(String matricula) {
+		this.matricula = matricula;
+	}
 
-    public void setMatricula(String matricula) {
-        this.matricula = matricula;
-    }
+	public String getModelo() {
+		return modelo;
+	}
 
-    public String getModelo() {
-        return modelo;
-    }
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
+	}
 
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
-    }
+	public String getMarca() {
+		return marca;
+	}
 
-    public String getMarca() {
-        return marca;
-    }
+	public void setMarca(String marca) {
+		this.marca = marca;
+	}
 
-    public void setMarca(String marca) {
-        this.marca = marca;
-    }
+	public String getMotor() {
+		return motor;
+	}
 
-    public float getKmRecorridos() {
-        return kmRecorridos;
-    }
+	public void setMotor(String motor) {
+		this.motor = motor;
+	}
 
-    public void setKmRecorridos(float kmRecorridos) {
-        this.kmRecorridos = kmRecorridos;
-    }
+	public int getKms_recorridos() {
+		return kms_recorridos;
+	}
 
-    public float getPrecioDia() {
-        return precioDia;
-    }
+	public void setKms_recorridos(int kms_recorridos) {
+		this.kms_recorridos = kms_recorridos;
+	}
 
-    public void setPrecioDia(float precioDia) {
-        this.precioDia = precioDia;
-    }
+	public float getPrecio_dia() {
+		return precio_dia;
+	}
 
-    public String getTipoMotor() {
-        return tipoMotor;
-    }
+	public void setPrecio_dia(int precio_dia) {
+		this.precio_dia = precio_dia;
+	}
 
-    public void setTipoMotor(String tipoMotor) {
-        this.tipoMotor = tipoMotor;
-    }
+	public String getConductor() {
+		return conductor;
+	}
+
+	public void setConductor(String conductor) {
+		this.conductor = conductor;
+	}
+
+	public int getDias_alquilado() {
+		return dias_alquilado;
+	}
+
+	public void setDias_alquilado(int dias_alquilado) {
+		this.dias_alquilado = dias_alquilado;
+	}
+	
 }

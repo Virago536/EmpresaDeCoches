@@ -340,6 +340,12 @@ public class Main {
 						System.out.println("- volumen del maletero: "+ cualquiera.getV_maletero());
 						System.out.println("- número de puertas: "+ cualquiera.getPuertas());
 						System.out.println("- Precio por día: "+ cualquiera.getPrecio_dia()+ " €");
+						if(cualquiera.getConductor()==null) {
+							System.out.println("Conductor actual: ninguno");
+						}
+						else {
+							System.out.println("Conductor actual: "+cualquiera.getConductor());
+						}
 					}
 				}
 				System.out.println("Furgones: ");
@@ -351,6 +357,12 @@ public class Main {
 						System.out.println("- tipo de motor: "+cualquiera.getMotor());
 						System.out.println("- tipo: "+cualquiera.getTipo());
 						System.out.println("- Precio por día"+ cualquiera.getPrecio_dia()+ " €");
+						if(cualquiera.getConductor()==null) {
+							System.out.println("Conductor actual: ninguno");
+						}
+						else {
+							System.out.println("Conductor actual: "+cualquiera.getConductor());
+						}
 					}
 				}
 				System.out.println("Camiones: ");
@@ -361,6 +373,12 @@ public class Main {
 						System.out.println("- tipo de motor: "+cualquiera.getMotor());
 						System.out.println("- Longitud: "+cualquiera.getLongitud()+ " m");
 						System.out.println("- Precio por día"+ cualquiera.getPrecio_dia()+ " €");
+						if(cualquiera.getConductor()==null) {
+							System.out.println("Conductor actual: ninguno");
+						}
+						else {
+							System.out.println("Conductor actual: "+cualquiera.getConductor());
+						}
 					}
 				}
 				break;

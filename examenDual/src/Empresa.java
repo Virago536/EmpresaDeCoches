@@ -151,7 +151,6 @@ public class Empresa implements GestorCliente{
 		
 	}
 
-	@Override
 	public boolean addCliente(Cliente c) {
 		if(c != null && !mapaClientes.containsValue(c)) {
 			mapaClientes.put(c.getDni(), c);
@@ -160,7 +159,6 @@ public class Empresa implements GestorCliente{
 		else return false;
 	}
 
-	@Override
 	public boolean removeCliente(Cliente c) {
 		if(c != null && mapaClientes.containsValue(c)) {
 			mapaClientes.remove(c.getDni(), c);
@@ -169,7 +167,6 @@ public class Empresa implements GestorCliente{
 		return false;
 	}
 
-	@Override
 	public Cliente buscarCliente(String dni) {
 		if(dni!= null) {
 			return mapaClientes.get(dni); 

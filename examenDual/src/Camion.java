@@ -1,29 +1,29 @@
 package com.politecnico.coches;
 
 public class Camion extends Vehiculo{
+	int carga, longitud;
 
-    float cargaMaxima;
-    float longitud;
+	public Camion(String matricula, String modelo, String marca, String motor, int kms_recorridos, float precio_dia, String conductor, int dias_alquilado, int carga, int longitud) {
+		super(matricula, modelo, marca, motor, kms_recorridos, precio_dia, conductor, dias_alquilado);
+		this.carga = carga;
+		this.longitud = longitud;
+	}
 
-    public Camion(String matricula, String modelo, String marca, float kmRecorridos, float precioDia, String tipoMotor, float cargaMaxima, float longitud) {
-        super(matricula, modelo, marca, kmRecorridos, precioDia, tipoMotor);
-        this.cargaMaxima = cargaMaxima;
-        this.longitud = longitud;
-    }
+	public int getCarga() {
+		return carga;
+	}
 
-    public float getCargaMaxima() {
-        return cargaMaxima;
-    }
+	public void setCarga(int carga) {
+		this.carga = carga;
+	}
 
-    public void setCargaMaxima(float cargaMaxima) {
-        this.cargaMaxima = cargaMaxima;
-    }
+	public int getLongitud() {
+		return longitud;
+	}
 
-    public float getLongitud() {
-        return longitud;
-    }
-
-    public void setLongitud(float longitud) {
-        this.longitud = longitud;
-    }
+	public void setLongitud(int longitud) {
+		this.longitud = longitud;
+	}
+	
 }
+

@@ -1,30 +1,28 @@
 package com.politecnico.coches;
 
-public class Furgoneta extends Vehiculo{
+public class Furgoneta extends Vehiculo {
+	int carga, asientos;
 
-    float cargaMaxima;
-    int plazaAsientos;
+	public Furgoneta(String matricula, String modelo, String marca, String motor, int kms_recorridos, float precio_dia, String conductor, int dias_alquilado,int carga, int asientos) {
+		super(matricula, modelo, marca, motor, kms_recorridos, precio_dia, conductor, dias_alquilado);
+		this.carga = carga;
+		this.asientos = asientos;
+	}
 
-    public Furgoneta(String matricula, String modelo, String marca, float kmRecorridos, float precioDia, String tipoMotor, float cargaMaxima, int plazaAsientos) {
-        super(matricula, modelo, marca, kmRecorridos, precioDia, tipoMotor);
-        this.cargaMaxima = cargaMaxima;
-        this.plazaAsientos = plazaAsientos;
+	public int getCarga() {
+		return carga;
+	}
 
-    }
+	public void setCarga(int carga) {
+		this.carga = carga;
+	}
 
-    public float getCargaMaxima() {
-        return cargaMaxima;
-    }
+	public int getAsientos() {
+		return asientos;
+	}
 
-    public void setCargaMaxima(float cargaMaxima) {
-        this.cargaMaxima = cargaMaxima;
-    }
-
-    public int getPlazaAsientos() {
-        return plazaAsientos;
-    }
-
-    public void setPlazaAsientos(int plazaAsientos) {
-        this.plazaAsientos = plazaAsientos;
-    }
+	public void setAsientos(int asientos) {
+		this.asientos = asientos;
+	}
+	
 }

@@ -1,49 +1,46 @@
 package com.politecnico.coches;
 
 public class Coche extends Vehiculo{
+	private int plazas, puertas, v_maletero;
+	private String tipo;
 
-    int plazasMaximas;
-    int numPuertas;
-    float volumenMaletero;
-    String tipo;
+	public Coche(String matricula, String modelo, String marca, String motor, int kms_recorridos, float precio_dia, String conductor, int dias_alquilado, int plazas, int puertas, int v_maletero, String tipo) {
+		super(matricula, modelo, marca, motor, kms_recorridos, precio_dia, conductor, dias_alquilado);
+		this.plazas = plazas;
+		this.puertas = puertas;
+		this.v_maletero = v_maletero;
+		this.tipo = tipo;
+	}
 
-    public Coche(String matricula, String modelo, String marca, float kmRecorridos, float precioDia,String tipoMotor, int plazasMaximas, int numPuertas, float volumenMaletero, String tipo) {
-        super(matricula, modelo, marca, kmRecorridos, precioDia, tipoMotor);
-        this.plazasMaximas = plazasMaximas;
-        this.numPuertas = numPuertas;
-        this.volumenMaletero = volumenMaletero;
-        this.tipo = tipo;
-    }
+	public int getPlazas() {
+		return plazas;
+	}
 
-    public int getPlazasMaximas() {
-        return plazasMaximas;
-    }
+	public void setPlazas(int plazas) {
+		this.plazas = plazas;
+	}
 
-    public void setPlazasMaximas(int plazasMaximas) {
-        this.plazasMaximas = plazasMaximas;
-    }
+	public int getPuertas() {
+		return puertas;
+	}
 
-    public int getNumPuertas() {
-        return numPuertas;
-    }
+	public void setPuertas(int puertas) {
+		this.puertas = puertas;
+	}
 
-    public void setNumPuertas(int numPuertas) {
-        this.numPuertas = numPuertas;
-    }
+	public int getV_maletero() {
+		return v_maletero;
+	}
 
-    public float getVolumenMaletero() {
-        return volumenMaletero;
-    }
-
-    public void setVolumenMaletero(float volumenMaletero) {
-        this.volumenMaletero = volumenMaletero;
-    }
-
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
+	public void setV_maletero(int v_maletero) {
+		this.v_maletero = v_maletero;
+	}
+	
+	public String getTipo() {
+		return tipo;
+	}
+	
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
 }

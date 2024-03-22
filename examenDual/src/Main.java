@@ -335,31 +335,32 @@ public class Main {
 				for(Coche cualquiera: Opel.listaCoches) {
 					if(cualquiera.getPlazas()>= nPlazas && cualquiera.getMotor().compareTo(xMotor)==0) {
 						System.out.println("// "+cualquiera.getMarca()+" "+cualquiera.getModelo()+" "+cualquiera.getMatricula()+": ");
-						System.out.println("-número de plazas: "+cualquiera.getPlazas());
-						System.out.println("-tipo de motor: "+cualquiera.getMotor());
-						System.out.println("-volumen del maletero: "+ cualquiera.getV_maletero());
-						System.out.println("-número de puertas: "+ cualquiera.getPuertas());
-						System.out.println("-Precio por día: "+ cualquiera.getPrecio_dia()+ " €");
+						System.out.println("- número de plazas: "+cualquiera.getPlazas());
+						System.out.println("- tipo de motor: "+cualquiera.getMotor());
+						System.out.println("- volumen del maletero: "+ cualquiera.getV_maletero());
+						System.out.println("- número de puertas: "+ cualquiera.getPuertas());
+						System.out.println("- Precio por día: "+ cualquiera.getPrecio_dia()+ " €");
 					}
 				}
 				System.out.println("Furgones: ");
 				for(Furgoneta cualquiera: Opel.listaFurgonetas) {
 					if(cualquiera.getCarga()>= xCarga && cualquiera.getAsientos()>= nPlazas) {
 						System.out.println("// "+cualquiera.getMarca()+" "+cualquiera.getModelo()+" "+cualquiera.getMatricula()+": ");
-						System.out.println("-Carga máxima: "+cualquiera.getCarga()+ " Kg");
-						System.out.println("-número de asientos: "+cualquiera.getAsientos());
-						System.out.println("-tipo de motor: "+cualquiera.getMotor());
-						System.out.println("-Precio por día"+ cualquiera.getPrecio_dia()+ " €");
+						System.out.println("- Carga máxima: "+cualquiera.getCarga()+ " Kg");
+						System.out.println("- número de asientos: "+cualquiera.getAsientos());
+						System.out.println("- tipo de motor: "+cualquiera.getMotor());
+						System.out.println("- tipo: "+cualquiera.getTipo());
+						System.out.println("- Precio por día"+ cualquiera.getPrecio_dia()+ " €");
 					}
 				}
 				System.out.println("Camiones: ");
 				for(Camion cualquiera: Opel.listaCamiones) {
 					if(cualquiera.getCarga()>= xCarga && cualquiera.getLongitud() <= mLongitud) {
 						System.out.println("// "+cualquiera.getMarca()+" "+cualquiera.getModelo()+" "+cualquiera.getMatricula()+": ");
-						System.out.println("-Carga máxima: "+cualquiera.getCarga()+ " Kg");
-						System.out.println("-tipo de motor: "+cualquiera.getMotor());
-						System.out.println("-Longitud: "+cualquiera.getLongitud()+ " m");
-						System.out.println("-Precio por día"+ cualquiera.getPrecio_dia()+ " €");
+						System.out.println("- Carga máxima: "+cualquiera.getCarga()+ " Kg");
+						System.out.println("- tipo de motor: "+cualquiera.getMotor());
+						System.out.println("- Longitud: "+cualquiera.getLongitud()+ " m");
+						System.out.println("- Precio por día"+ cualquiera.getPrecio_dia()+ " €");
 					}
 				}
 				break;
